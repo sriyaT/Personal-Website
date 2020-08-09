@@ -1,0 +1,55 @@
+.contact-container {
+  height: 93vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  background: url('../../img/contactUs.jpg');
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-color: rgba(20, 20, 20, 0.9);
+  background-size: cover;
+}
+.main .socials {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .socials img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 4px 1px 10px 0px rgba(255, 255, 255, 0.4);
+}
+.main .socials a {
+  color: #fff;
+
+  text-decoration: none;
+  text-align: center;
+}
+.socialLink {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+.socialLink:hover {
+  transform: scale(1.5);
+}
+h1 {
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Arial', Helvetica, sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+}

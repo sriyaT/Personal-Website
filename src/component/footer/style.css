@@ -1,0 +1,25 @@
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: calc(20vh - 60px);
+  width: 100vw;
+}
+.socials {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.socials img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}

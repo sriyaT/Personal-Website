@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Switch, Route, withRouter } from 'react-router-dom';
 import './App.css';
+import Nav from './component/nav/Nav';
+import Home from './component/home/Home';
+import Footer from './component/footer/Footer';
+import AboutMe from './component/AboutMe/AboutMe';
+import Projects from './component/projects/Projects';
+import ContactMe from './component/contact/ContactMe';
 
-function App() {
+function App(props) {
+  const { pathname } = props.location;
+  console.log('--->', pathname);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='App'>
+        <Nav></Nav>
+
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/about-me' component={AboutMe} />
+
+          <Route path='/projects' component={Projects} />
+          <Route path='/contact' component={ContactMe} />
+        </Switch>
+      </div>
+      {pathname !== '/contact' ? <Footer></Footer> : null}
+    </>
   );
 }
 
-export default App;
+export default withRouter(App);

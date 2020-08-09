@@ -1,0 +1,40 @@
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+nav {
+  background-color: black;
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.navbar .logo {
+  height: 50px;
+  width: 13%;
+  border-radius: 2%;
+  margin-top: 6px;
+  margin-right: 40px;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+.navbar ul {
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.navbar ul li a:active {
+  color: #6fd602;
+}

@@ -1,0 +1,49 @@
+.card-container {
+  height: 550px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+
+  margin: 20px;
+}
+.card {
+  width: 95%;
+  height: 95%;
+  margin: 20px;
+
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4);
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.card .text-section {
+  padding: 12px;
+  color: #444343;
+  font-weight: 400;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card h6 {
+  color: black;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+}
+.read-more {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+  text-align: center;
+}
+.read-more:hover {
+  text-decoration: dashed;
+}
