@@ -31,7 +31,7 @@ const AboutMe = () => {
       </div>
       <div className='right-container'>
         <div className='image'>
-          <img src={myImg} />
+          <img src={myImg} alt='myImg' />
         </div>
         <div className='name'>
           <h4>T Sriya</h4>
