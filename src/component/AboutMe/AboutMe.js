@@ -8,7 +8,7 @@ const AboutMe = () => {
       <div className='left-container'>
         <span>Hi Folks,</span>
         <p>
-          I'm self-taught Front-End Web Developer,I got a strong motivation to
+          I'm self-taught Front-End Web Developer, I got a strong motivation to
           change my career. I picked up ... Web Development, it's easy to learn,
           creative platform to express my skills through building applications
           or websites, got high popularity on market, hmmm...seems suitable for
@@ -25,7 +25,7 @@ const AboutMe = () => {
           to become a front-end developer and it's been a year i'm into this and
           Learned as many skills came on my way like "React router", "Redux",
           "Firebase" and Deploying all that..., And Now I have build some of
-          projects right there on "Projects" section.
+          projects right there on "My Work" section.
         </p>
         <h3>Thanks For Spending your valuable time to know about me.</h3>
       </div>

@@ -20,11 +20,11 @@ function App(props) {
           <Route exact path='/' component={Home} />
           <Route path='/about-me' component={AboutMe} />
 
-          <Route path='/projects' component={Projects} />
+          <Route path='/my-work' component={Projects} />
           <Route path='/contact' component={ContactMe} />
         </Switch>
       </div>
-      {pathname !== '/contact' ? <Footer></Footer> : null}
+      {pathname !== '/contact' && pathname !== '/' ? <Footer></Footer> : null}
     </>
   );
 }
