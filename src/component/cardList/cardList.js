@@ -262,7 +262,7 @@ export const cardData = [
     name: 'Movie Seat  Booking Application',
     info:
       'Movie Seat  Booking Application, As like online movie seat booking apps, it functions the same, it allows you to book a seat and it shows how many seats are reserved, it allows you to select a movie and displays the amount according to the movies and number of seats you have selected, as the way you can book you movie tickets.',
-    link: 'https://youtube-clone-react-app-v1.netlify.app',
+    link: 'https://movie-seats-booking-vjs.netlify.app',
   },
   {
     id: 29,
