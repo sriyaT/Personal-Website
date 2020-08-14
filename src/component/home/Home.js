@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 class Home extends Component {
@@ -22,9 +23,9 @@ class Home extends Component {
           </p>
           <span className='span-ele'>CSS - JavaScript - React</span>
 
-          <a className='contact-btn' href='/contact'>
+          <Link className='contact-btn' to='/contact'>
             Contact Me
-          </a>
+          </Link>
 
           <a
             className='contact-btn'

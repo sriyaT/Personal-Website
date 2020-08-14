@@ -12,20 +12,16 @@ function App(props) {
   const { pathname } = props.location;
   console.log('--->', pathname);
   return (
-    <>
-      <div className='App'>
-        <Nav></Nav>
-
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/about-me' component={AboutMe} />
-
-          <Route path='/my-work' component={Projects} />
-          <Route path='/contact' component={ContactMe} />
-        </Switch>
-      </div>
+    <div className='App'>
+      <Nav></Nav>
+      <Switch>
+        <Route path='/' exact component={Home} />
+        <Route path='/about-me' exact component={AboutMe} />
+        <Route path='/my-work' exact component={Projects} />
+        <Route path='/contact' exact component={ContactMe} />
+      </Switch>
       {pathname !== '/contact' && pathname !== '/' ? <Footer></Footer> : null}
-    </>
+    </div>
   );
 }
 

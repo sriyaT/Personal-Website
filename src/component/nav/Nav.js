@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import './style.css';
 
@@ -10,17 +11,17 @@ class Nav extends Component {
           <h1 className='name'>T.Sriya</h1>
           <ul className='nav-list'>
             <li>
-              <a href='/'>Home</a>
+              <Link to='/'>Home</Link>
             </li>
             <li>
-              <a href='/about-me'>About Me</a>
+              <Link to='/about-me'>About Me</Link>
             </li>
             <li>
-              <a href='/my-work'>My Work</a>
+              <Link to='/my-work'>My Work</Link>
             </li>
 
             <li>
-              <a href='/contact'>Contact Me</a>
+              <Link to='/contact'>Contact Me</Link>
             </li>
           </ul>
         </div>
